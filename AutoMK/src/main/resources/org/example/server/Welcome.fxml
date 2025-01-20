@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.server.UnifiedFXMLController" style="-fx-background-image: url('backround.jpg');-fx-background-position: center;-fx-background-repeat: no-repeat;-fx-background-size: 100%;-fx-alignment: center;">
+   <children>
+      <Button fx:id="Darslik" layoutX="89.0" layoutY="381.0" mnemonicParsing="true" style="-fx-background-color: #01c101; -fx-background-radius: 10 ; -fx-border-color: white; -fx-border-radius: 10;">
+         <graphic>
+            <ImageView fitHeight="250.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/Mavzular.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="Imtihon" layoutX="989.0" layoutY="386.0" mnemonicParsing="true" style="-fx-background-color: #FF2160; -fx-background-radius: 10 ; -fx-border-color: white; -fx-border-radius: 10;">
+         <graphic>
+            <ImageView fitHeight="250.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/Imtihon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="Variant" layoutX="1437.0" layoutY="378.0" mnemonicParsing="true" style="-fx-background-color: #2E3796; -fx-background-radius: 10 ; -fx-border-color: white; -fx-border-radius: 10;">
+         <graphic>
+            <ImageView fitHeight="250.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/Variantlar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="Oralik_Test" layoutX="538.0" layoutY="381.0" mnemonicParsing="true" prefHeight="250.0" prefWidth="330.0" style="-fx-background-color: #FFA353; -fx-background-radius: 10 ; -fx-border-color: white; -fx-border-radius: 10;">
+         <graphic>
+            <ImageView fitHeight="250.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/OraliqTest.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.layout.Pane?>
+<AnchorPane prefHeight="1020.0" prefWidth="1870.0" style="-fx-background-image: url(src/main/resources/Rasm.jpg);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.server.ResultController">
+   <children>
+
+      <Button  layoutX="457.0" layoutY="109.0" mnemonicParsing="false" prefHeight="800.0" prefWidth="900.0" />
+      <Label fx:id="idLabel" layoutX="680.0" layoutY="204.0" text="Label">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="ismLabel" layoutX="684.0" layoutY="249.0" text="Label">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="famLabel" layoutX="694.0" layoutY="299.0" text="Label">
+         <font>
+            <Font size="30.0"/>
+         </font>
+      </Label>
+      <Label  layoutX="704.0" layoutY="344.0" text="0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="button" layoutX="829.0" layoutY="580.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="128.0" text="Tugatish" />
+      <Pane fx:id="container" layoutX="100" layoutY="100" style="-fx-text-fill: black"/>
+   </children>
+</AnchorPane>
