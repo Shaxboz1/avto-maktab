@@ -319,8 +319,6 @@ public class QuestionFXMLController {
             throw new RuntimeException(e);
         }
     }
-
-
     private void openScene(String fxmlPath) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));
