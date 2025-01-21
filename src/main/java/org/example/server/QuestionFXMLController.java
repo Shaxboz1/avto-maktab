@@ -52,11 +52,9 @@ public class QuestionFXMLController {
     private int currentQuestionIndex = 0;
     private int wrongAnswersCount = 0;
     private int trueAnswerCount = 0;
-    String csvFile = "savollar.csv";
-    String csvSplitBy = ",";
     private final List<Questions> questionsList = new ArrayList<>();
 
-    private int timeRemainingInSeconds = 10;
+    private int timeRemainingInSeconds = 100;
 
     @FXML
     private void initialize() {
@@ -217,19 +215,16 @@ public class QuestionFXMLController {
             System.err.println("CSV faylni o‘qishda xatolik: " + e.getMessage());
         }
     }
-
-
     private void showQuestion() {
-
         Questions currentQuestion = questionsList.get(currentQuestionIndex);
         savoLabel.setText(currentQuestion.getQuestion());
         f1Label.setText(currentQuestion.getOptions().getA());
         f2Label.setText(currentQuestion.getOptions().getB());
         f3Label.setText(currentQuestion.getOptions().getC());
 
-        f1Btn.setStyle("-fx-background-color: #00BFFF; -fx-border-color: white;-fx-background-radius: 10px 0 0 10px; -fx-border-radius: 10px 0 0 10px;");
-        f2Btn.setStyle("-fx-background-color: #00BFFF; -fx-border-color: white;-fx-background-radius: 10px 0 0 10px; -fx-border-radius: 10px 0 0 10px;");
-        f3Btn.setStyle("-fx-background-color: #00BFFF; -fx-border-color: white;-fx-background-radius: 10px 0 0 10px; -fx-border-radius: 10px 0 0 10px;");
+        f1Btn.setStyle("-fx-background-color: rgba(70, 0, 255, 0.2); -fx-border-color: white;-fx-background-radius: 10px 0 0 10px; -fx-border-radius: 10px 0 0 10px;");
+        f2Btn.setStyle("-fx-background-color: rgba(70, 0, 255, 0.2); -fx-border-color: white;-fx-background-radius: 10px 0 0 10px; -fx-border-radius: 10px 0 0 10px;");
+        f3Btn.setStyle("-fx-background-color: rgba(70, 0, 255, 0.2); -fx-border-color: white;-fx-background-radius: 10px 0 0 10px; -fx-border-radius: 10px 0 0 10px;");
 
         if (currentQuestion.getSelectedAnswer() != null) {
             if (currentQuestion.getSelectedAnswer().equals("A")) {

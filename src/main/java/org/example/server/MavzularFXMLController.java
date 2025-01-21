@@ -31,7 +31,7 @@ public class MavzularFXMLController {
             button.setText(buttonTexts[i]);
             button.setPrefHeight(57.0);
             button.setPrefWidth(710.0);
-            button.setStyle("-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #00BFFF, #001F4D); -fx-border-color: white; -fx-background-radius: 15; -fx-border-radius: 15;-fx-text-fill: #ffff;-fx-font-size: 20;");
+            button.setStyle("-fx-background-color: rgba(70, 0, 255, 0.2); -fx-border-color: white; -fx-background-radius: 15; -fx-border-radius: 15;-fx-text-fill: #ffff;-fx-font-size: 20;");
             button.setId("button" + (i + 1));
 
             int buttonIndex = i + 1;

@@ -44,7 +44,7 @@
             </Button>
          </children>
       </Pane>
-      <Button fx:id="bolm1" layoutX="559.0" layoutY="326.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="805.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #00BFFF, #001F4D); -fx-background-radius: 15; -fx-border-color: white; -fx-border-radius: 15;" text="1-Bo'lm" textFill="WHITE">
+      <Button fx:id="bolm1" layoutX="559.0" layoutY="326.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="805.0" style="-fx-background-color: rgba(70, 0, 255, 0.2);; -fx-background-radius: 15; -fx-border-color: white; -fx-border-radius: 15;" text="1-Bo'lm" textFill="WHITE">
          <font>
             <Font name="Arial Black" size="20.0" />
          </font>
@@ -52,7 +52,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="bolm2" layoutX="559.0" layoutY="395.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="804.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #00BFFF, #001F4D); -fx-background-radius: 15; -fx-border-color: white; -fx-border-radius: 15;" text="2-Bo'lm" textFill="WHITE">
+      <Button fx:id="bolm2" layoutX="559.0" layoutY="395.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="804.0" style=" -fx-background-color: rgba(70, 0, 255, 0.2); -fx-background-radius: 15; -fx-border-color: white; -fx-border-radius: 15;" text="2-Bo'lm" textFill="WHITE">
          <font>
             <Font name="Arial Black" size="20.0" />
          </font>
@@ -60,7 +60,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="bolm3" layoutX="558.0" layoutY="458.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="803.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #00BFFF, #001F4D); -fx-background-radius: 15    ; -fx-border-color: white; -fx-border-radius: 15;" text="3-Bo'lm" textFill="WHITE">
+      <Button fx:id="bolm3" layoutX="558.0" layoutY="458.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="803.0" style=" -fx-background-color: rgba(70, 0, 255, 0.2); -fx-background-radius: 15    ; -fx-border-color: white; -fx-border-radius: 15;" text="3-Bo'lm" textFill="WHITE">
          <font>
             <Font name="Arial Black" size="20.0" />
          </font>
