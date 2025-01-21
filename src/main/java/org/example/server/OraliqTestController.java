@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 public class OraliqTestController {
-
+//fftugug
     @FXML
     private Label savoLabel;
     @FXML
