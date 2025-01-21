@@ -6,13 +6,14 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import lombok.Setter;
-
 import java.io.IOException;
 
 public class ResultController {
-    @Setter
     private int correctAnswersCount;
+
+    public void setCorrectAnswersCount(int correctAnswersCount) {
+        this.correctAnswersCount = correctAnswersCount;
+    }
 
     @FXML
     private AnchorPane rootPane;
