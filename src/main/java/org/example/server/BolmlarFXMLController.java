@@ -44,7 +44,6 @@ public class BolmlarFXMLController {
         bolm3.setOnAction(event -> openScene("/org/example/server/MavzularFXML.fxml"));
         ortga.setOnAction(event -> openScene("/org/example/server/Welcome.fxml"));
     }
-
     private void openScene(String fxmlPath) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));
