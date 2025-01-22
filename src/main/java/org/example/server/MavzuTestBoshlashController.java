@@ -20,9 +20,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-public class QuestionFXMLController {
-    @FXML
-    Label nameLabel;
+
+public class MavzuTestBoshlashController {
     @FXML
     private Label savoLabel;
     @FXML
@@ -47,24 +46,22 @@ public class QuestionFXMLController {
     private Pane buttonContainer;
     @FXML
     private AnchorPane rootPane;
-
     @FXML
+
+
     private Label timerLabel;
     private int currentQuestionIndex = 0;
     private int wrongAnswersCount = 0;
     private int trueAnswerCount = 0;
-    String id;
-    String name;
     private final List<Questions> questionsList = new ArrayList<>();
 
-    private int timeRemainingInSeconds = 100;
 
     @FXML
     private void initialize() {
         populateQuestions();
         showQuestion();
         createDynamicButtons();
-        startTimer();
+
 
         buttonContainer.setFocusTraversable(true);
         buttonContainer.requestFocus();
@@ -102,26 +99,6 @@ public class QuestionFXMLController {
         BoshMenu.setOnAction(actionEvent -> openScene("/org/example/server/Welcome.fxml"));
     }
 
-    private void startTimer() {
-        Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(1), e -> {
-            if (timeRemainingInSeconds > 0) {
-                timeRemainingInSeconds--;
-                updateTimerLabel();
-            } else {
-                timerLabel.setText("Time's up!");
-                openResultScene(trueAnswerCount);
-            }
-        }));
-
-        timeline.setCycleCount(Timeline.INDEFINITE);
-        timeline.play();
-    }
-
-    private void updateTimerLabel() {
-        int minutes = timeRemainingInSeconds / 60;
-        int seconds = timeRemainingInSeconds % 60;
-        timerLabel.setText(String.format("%02d:%02d", minutes, seconds));
-    }
 
     private void enableAnswerButtons() {
         f1Btn.setDisable(false);
@@ -203,6 +180,7 @@ public class QuestionFXMLController {
                 String correctAnswer = data[4];
 
 
+
                 Options options = new Options(optionA, optionB, optionC);
                 Questions question = new Questions(questionText, options, correctAnswer);
                 questionsList.add(question);
@@ -218,16 +196,19 @@ public class QuestionFXMLController {
             System.err.println("CSV faylni o‘qishda xatolik: " + e.getMessage());
         }
     }
+
+
     private void showQuestion() {
+
         Questions currentQuestion = questionsList.get(currentQuestionIndex);
         savoLabel.setText(currentQuestion.getQuestion());
         f1Label.setText(currentQuestion.getOptions().getA());
         f2Label.setText(currentQuestion.getOptions().getB());
         f3Label.setText(currentQuestion.getOptions().getC());
 
-        f1Btn.setStyle("-fx-background-color: rgba(70, 0, 255, 0.2); -fx-border-color: white;-fx-background-radius: 10px 0 0 10px; -fx-border-radius: 10px 0 0 10px;");
-        f2Btn.setStyle("-fx-background-color: rgba(70, 0, 255, 0.2); -fx-border-color: white;-fx-background-radius: 10px 0 0 10px; -fx-border-radius: 10px 0 0 10px;");
-        f3Btn.setStyle("-fx-background-color: rgba(70, 0, 255, 0.2); -fx-border-color: white;-fx-background-radius: 10px 0 0 10px; -fx-border-radius: 10px 0 0 10px;");
+        f1Btn.setStyle("-fx-background-color: #00BFFF; -fx-border-color: white;-fx-background-radius: 10px 0 0 10px; -fx-border-radius: 10px 0 0 10px;");
+        f2Btn.setStyle("-fx-background-color: #00BFFF; -fx-border-color: white;-fx-background-radius: 10px 0 0 10px; -fx-border-radius: 10px 0 0 10px;");
+        f3Btn.setStyle("-fx-background-color: #00BFFF; -fx-border-color: white;-fx-background-radius: 10px 0 0 10px; -fx-border-radius: 10px 0 0 10px;");
 
         if (currentQuestion.getSelectedAnswer() != null) {
             if (currentQuestion.getSelectedAnswer().equals("A")) {
@@ -281,11 +262,6 @@ public class QuestionFXMLController {
 
         updateQuestionButtonColors();
 
-        if (wrongAnswersCount >= 3) {
-            openResultScene(trueAnswerCount);
-            return;
-        }
-
         PauseTransition pause = new PauseTransition(Duration.seconds(1));
         pause.setOnFinished(event -> {
             if (currentQuestionIndex < questionsList.size() - 1) {
@@ -297,25 +273,7 @@ public class QuestionFXMLController {
         pause.play();
     }
 
-    private void openResultScene(int correctAnswersCount) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/server/Result.fxml"));
-            AnchorPane root = loader.load();
 
-            ResultController resultController = loader.getController();
-            resultController.button.setText("Correct Answers: " + correctAnswersCount);
-            resultController.idLabel.setText(String.valueOf(id));
-            resultController.ismLabel.setText(String.valueOf(name));
-            Scene scene = new Scene(root);
-            Stage stage = (Stage) BoshMenu.getScene().getWindow();
-            stage.close();
-            stage.setScene(scene);
-            stage.setFullScreen(true);
-            stage.show();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
     private void openScene(String fxmlPath) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));

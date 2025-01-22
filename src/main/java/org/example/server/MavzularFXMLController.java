@@ -20,6 +20,7 @@ public class MavzularFXMLController {
     private GridPane gridPane;
 
     public void initialize() {
+
         BoshSahifa.setOnAction(event -> openScene("/org/example/server/Welcome.fxml"));
         ortga.setOnAction(event -> openScene("/org/example/server/BolmlarFXML.fxml"));
 
@@ -31,15 +32,26 @@ public class MavzularFXMLController {
             button.setText(buttonTexts[i]);
             button.setPrefHeight(57.0);
             button.setPrefWidth(710.0);
-            button.setStyle("-fx-background-color: rgba(70, 0, 255, 0.2); -fx-border-color: white; -fx-background-radius: 15; -fx-border-radius: 15;-fx-text-fill: #ffff;-fx-font-size: 20;");
+            button.setStyle("-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #00BFFF, #001F4D); -fx-border-color: white; -fx-background-radius: 15; -fx-border-radius: 15;-fx-text-fill: #ffff;-fx-font-size: 20;");
             button.setId("button" + (i + 1));
 
+            // Button bosilganda nimani qilish kerakligini aniqlash
             int buttonIndex = i + 1;
-            button.setOnAction(event -> System.out.println(buttonIndex + " tugma bosildi!"));
+
+            // Agar buttonIndex 1 bo'lsa, OraliqTest sahifasini ochish
+            if (buttonIndex == 1) {
+                button.setOnAction(event -> openScene("/org/example/server/MavzuTest.fxml"));
+            } else {
+                // Boshqa tugmalar uchun umumiy voqealar qo'shish
+                button.setOnAction(event -> System.out.println(buttonIndex + " tugma bosildi!"));
+            }
+
+            // GridPane'ga button qo'shish
             gridPane.add(button, 0, i);
             applyHoverAnimation(button);
         }
     }
+
     private void applyHoverAnimation(Button button) {
         button.setOnMouseEntered(e -> playScaleAnimation(button, 1.05));
 

@@ -4,44 +4,31 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import java.io.IOException;
 
 public class ResultController {
-    private int correctAnswersCount;
-
-    public void setCorrectAnswersCount(int correctAnswersCount) {
-        this.correctAnswersCount = correctAnswersCount;
-    }
-
     @FXML
     private AnchorPane rootPane;
 
     @FXML
     private Button asosiyButton;
     @FXML
-    private Button idLabel;
+    Label idLabel;
     @FXML
-    private Button ismLabel;
-    @FXML
-    private Button famLabel;
+    Label ismLabel;
     @FXML
     private Button qaytish;
     @FXML
     public Button button;
-
     @FXML
     private void initialize() {
-        button.setText("Correct Answers: " + correctAnswersCount);
         qaytish.setOnAction(actionEvent -> openScene("/org/example/server/Welcome.fxml"));
-        idLabel.setText("ID");
         ismLabel.setText("Ism");
-        famLabel.setText("Familiya");
         qaytish.setText("Tugatish!");
-
         setupButtonLayout();
-
         rootPane.widthProperty().addListener((obs, oldVal, newVal) -> setupButtonLayout());
         rootPane.heightProperty().addListener((obs, oldVal, newVal) -> setupButtonLayout());
     }
@@ -64,10 +51,6 @@ public class ResultController {
         ismLabel.setPrefSize(buttonWidth, buttonHeight);
         ismLabel.setLayoutX(width * 0.4);
         ismLabel.setLayoutY(height * 0.3);
-
-        famLabel.setPrefSize(buttonWidth, buttonHeight);
-        famLabel.setLayoutX(width * 0.7);
-        famLabel.setLayoutY(height * 0.3);
 
         button.setPrefSize(buttonWidth, buttonHeight);
         button.setLayoutX(width * 0.4);

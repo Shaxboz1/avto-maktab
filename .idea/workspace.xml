@@ -4,32 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f82a06bd-a824-4974-b6fe-47fc85d0ae95" name="Changes" comment="">
+    <list default="true" id="24ff1994-6a28-42d8-8e5a-d2328596740d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/server/MavzuTestBoshlashController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/server/MavzuTextController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/server/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/server/MavzuTest.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/server/MavzuTestBoshlash.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/server/IdFXMLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/server/IdFXMLController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/server/MavzularFXMLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/server/MavzularFXMLController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/server/QuestionFXMLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/server/QuestionFXMLController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/server/ResultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/server/ResultController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/server/FORMA.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/server/FORMA.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/server/Result.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/server/Result.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
-  <component name="ProjectId" id="2rwIccGTDPnr5UKQ5cw1ZYn1hrO" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2rvrvrKNhNt9oDfTnxu0YPRE4cI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
+    "Groovy.COLS.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/User/IdeaProjects/avto-maktab",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -38,27 +63,60 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
-      </set>
-    </attachedChunks>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.server.Main" />
+      <module name="Server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f82a06bd-a824-4974-b6fe-47fc85d0ae95" name="Changes" comment="" />
-      <created>1737463792663</created>
+      <changelist id="24ff1994-6a28-42d8-8e5a-d2328596740d" name="Changes" comment="" />
+      <created>1737450622360</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1737463792663</updated>
-      <workItem from="1737463794020" duration="293000" />
+      <updated>1737450622360</updated>
+      <workItem from="1737450623456" duration="5006000" />
+      <workItem from="1737463425000" duration="120000" />
+      <workItem from="1737521014791" duration="15000" />
+      <workItem from="1737523405720" duration="2728000" />
+      <workItem from="1737539557633" duration="71000" />
+      <workItem from="1737539718993" duration="50000" />
+      <workItem from="1737539779522" duration="127000" />
+      <workItem from="1737540010808" duration="19000" />
+      <workItem from="1737541716002" duration="8000" />
     </task>
+    <task id="LOCAL-00001" summary="gsdsfghfdhfg">
+      <option name="closed" value="true" />
+      <created>1737451850481</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737451850481</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="gsdsfghfdhfg" />
+    <option name="LAST_COMMIT_MESSAGE" value="gsdsfghfdhfg" />
   </component>
 </project>
